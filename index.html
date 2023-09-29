@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header><p>Weather Forecast</p></header>
+    <div class="search">
+        <input id = "search-input"type="text" placeholder="Type here!">
+        <button><img id="search-button" src="icons/search.png" alt=""></button>
+    </div>
+    <div class="error">Invalid input.</div>
+        <div class="weather-forecast">
+            <div class="main-container">     
+                <div class="city"></div>
+                <img src="icons/sunny.png" class="weather-icon">
+                <div class="temperature"></div>
+            </div>
+            <div class="lower-container">
+                <div class="humidity-box">
+                    <img src="icons/humidity.png" alt="">
+                    <span class="humidity-value"></span>
+                </div>
+                <div class="wind-box">
+                    <img src="icons/wind.png" alt="">
+                    <span class="wind-value"></span>
+                </div>
+            </div>
+        </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
