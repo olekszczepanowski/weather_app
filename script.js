@@ -14,10 +14,13 @@ async function loadWeather(city){
     }
     
     const data = await response.json();
+
+    console.log(data);
     document.querySelector(".city").innerHTML=data.name;
     document.querySelector(".temperature").innerHTML=Math.round(data.main.temp) + "°C";
     document.querySelector(".humidity-value").innerHTML=data.main.humidity + "%";
     document.querySelector(".wind-value").innerHTML=data.wind.speed + "km/h";
+    document.querySelector(".pressure-value").innerHTML=data.main.pressure + " hPa";
     
     if(data.weather[0].main=="Rain"){
         weatherIcon.src="icons/rainy.png";

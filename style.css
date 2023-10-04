@@ -7,6 +7,7 @@
 body{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
 }
 header{
     font-size: 2.5em;
@@ -77,9 +78,9 @@ img{
     gap: 4em;
 }
 .lower-container img{
-    width: 65px;
+    width: 60px;
 }
-.humidity-box, .wind-box{
+.humidity-box, .wind-box, .pressure-box{
     display: flex;
     align-items: center;
     justify-content: center;
